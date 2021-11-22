@@ -52,7 +52,6 @@ Note:
 FROM scratch
 
 ARG SHA1
-
 ENV VERSION 0.0.1
 
 EXPOSE 80
