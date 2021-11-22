@@ -9,6 +9,7 @@ Introduction
 - What is Docker? <!-- .element: class="fragment fade-up" --->
 - General concepts <!-- .element: class="fragment fade-up" --->
 - Docker compose <!-- .element: class="fragment fade-up" --->
+- Docker desktop <!-- .element: class="fragment fade-up" --->
 - Demo <!-- .element: class="fragment fade-up" --->
 
 ---
