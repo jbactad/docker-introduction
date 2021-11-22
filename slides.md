@@ -1,4 +1,4 @@
-# Docker <!-- .element: class="r-fit-text" -->
+# Docker <!-- .element: class="r-fit-text" --> ![Docker](./images/docker.png)
 
 Introduction
 
@@ -46,7 +46,7 @@ Note:
 
 #### Dockerfile
 
-##### Example
+## Example
 
 ```dockerfile []
 FROM scratch
@@ -170,7 +170,7 @@ Note:
 
 ---
 
-## Demo
+## Demo Time!
 
 ---
 
