@@ -106,19 +106,6 @@ Note:
 
 ---
 
-#### Docker container
-
-![VM vs Containers](./images/virtualmachines-vs-containers.jpg)
-
-Note:
-
-- In the virtual machine (VM) world, this could be done by keeping applications separate while running on the same hardware,
-  but in that world each VM requires its own operating system, meaning they are typically large, slow to start up,
-  difficult to move around, and cumbersome to maintain and upgrade.
-- Where containers marked a defined shift from the VM era was by isolating execution environments while sharing the underlying OS kernel, providing a lightweight and speedy option for developers.
-
----
-
 #### General concepts
 
 ## Docker registry
@@ -151,6 +138,19 @@ Note:
 - Github packages
 - Amazon Elastic Container Registry
 - Gitlab Container Registry
+
+---
+
+#### Docker container
+
+![VM vs Containers](./images/virtualmachines-vs-containers.jpg)
+
+Note:
+
+- In the virtual machine (VM) world, this could be done by keeping applications separate while running on the same hardware,
+  but in that world each VM requires its own operating system, meaning they are typically large, slow to start up,
+  difficult to move around, and cumbersome to maintain and upgrade.
+- Where containers marked a defined shift from the VM era was by isolating execution environments while sharing the underlying OS kernel, providing a lightweight and speedy option for developers.
 
 ---
 
