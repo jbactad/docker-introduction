@@ -95,19 +95,6 @@ Note:
 
 #### General concepts
 
-## Docker container
-
-Is a self-contained unit of software that can run in a cloud server, in a giant bare-metal server or in your laptop.
-
-Note:
-
-- Containers are self-contained units of software
-- it will run in the same way because it is isolated at the process level and has its own file system.
-
----
-
-#### General concepts
-
 ## Docker registry
 
 A repository where Docker images can be stored, shared, and managed.
@@ -117,6 +104,8 @@ Note:
 - Comparable to Github, but specifically for Docker images.
 
 ---
+
+#### General concepts
 
 ## Docker Engine
 
@@ -141,7 +130,20 @@ Note:
 
 ---
 
-#### Docker container
+#### General concepts
+
+## Docker container
+
+Is a self-contained unit of software that can run in a cloud server, in a giant bare-metal server or in your laptop.
+
+Note:
+
+- Containers are self-contained units of software
+- it will run in the same way because it is isolated at the process level and has its own file system.
+
+---
+
+#### Docker container vs Virtual Machine
 
 ![VM vs Containers](./images/virtualmachines-vs-containers.jpg)
 
@@ -154,11 +156,15 @@ Note:
 
 ---
 
+#### General concepts
+
 ## Docker compose
 
 A command-line tool that uses YAML files to define and run multicontainer Docker applications
 
 ---
+
+#### General concepts
 
 ## Docker desktop
 
