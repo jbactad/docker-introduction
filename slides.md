@@ -1,4 +1,4 @@
-# Docker <!-- .element: class="r-fit-text" --> ![Docker](./images/docker.png)
+# Docker ![Docker](./images/docker.png)
 
 Introduction
 
