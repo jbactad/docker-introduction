@@ -8,6 +8,7 @@ Introduction
 
 - What is Docker? <!-- .element: class="fragment fade-up" --->
 - General concepts <!-- .element: class="fragment fade-up" --->
+- Docker CLI <!-- .element: class="fragment fade-up" --->
 - Docker compose <!-- .element: class="fragment fade-up" --->
 - Docker desktop <!-- .element: class="fragment fade-up" --->
 - Demo <!-- .element: class="fragment fade-up" --->
@@ -20,7 +21,7 @@ Docker is an OSS virtualization tool that helps in building isolated and lightwe
 
 Note:
 
-- Docker can be used in production or development.
+- Docker can be used in production, development or to run an application without installing it to your desktop machine.
 - Can be used to share some example that can run exactly the same on any OS.
 
 ---
@@ -156,19 +157,71 @@ Note:
 
 ---
 
-#### General concepts
+## Docker CLI
+
+A command-line tool that can be used to interact with the Docker Daemon.
+
+```bash []
+# Build a docker image from a dockerfile
+docker build
+# Start a container from a docker image
+docker run
+# Tags a docker image
+docker tag
+# Pulls an image from a registry
+docker pull
+# Publish a docker image to registry
+docker push
+# List all available local images
+docker images
+# List all containers
+docker ps
+```
+
+---
 
 ## Docker compose
 
 A command-line tool that uses YAML files to define and run multicontainer Docker applications
 
+```yaml
+version: '3.8'
+services:
+  vendor-list-api:
+    image: talabat.com/registry/vendor-list:latest
+    ports:
+      - 8084:80
+    environments:
+      - ASPNETCORE_ENVIRONMENT: Development
+  search-api:
+    image: talabat.com/registry/search:latest
+    ports:
+      - 8085:80
+    environments:
+      - ASPNETCORE_ENVIRONMENT: Development
+```
+
 ---
 
-#### General concepts
+## Docker compose commands
+
+```bash
+# All of these commands operate against the docker-compose.yaml
+# Start all containers
+docker-compose up
+# Stop all containers
+docker-compose down
+# Restart all containers
+docker-compose restart
+# List all containers, running or stopped.
+docker-compose ps
+```
+
+---
 
 ## Docker desktop
 
-Provides a user-friendly way to build and share containerized applications and microservices.
+An application that wraps all the tools required to use docker for desktop environment.
 
 Note:
 
