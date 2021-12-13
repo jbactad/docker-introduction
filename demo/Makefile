@@ -42,7 +42,7 @@ docker-run-multi-stage:
 ###########
 
 docker-run-from-registry:
-	docker run -it --network host
+	docker run -p3000:3000 -d joshjim27/docker-introduction-presentation
 
 
 ###########
