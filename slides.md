@@ -155,6 +155,39 @@ Note:
   difficult to move around, and cumbersome to maintain and upgrade.
 - Where containers marked a defined shift from the VM era was by isolating execution environments while sharing the underlying OS kernel, providing a lightweight and speedy option for developers.
 
+Note:
+
+- It was actually very common to have one Dockerfile to use for development (which contained everything needed to build your application), and a slimmed-down one to use for production, which only contained your application and exactly what was needed to run it.
+- This has been referred to as the “builder pattern”. Maintaining two Dockerfiles is not ideal.
+- You can selectively copy artifacts from one stage to another
+- Name your build stages
+- Stop at a specific build stage
+- Use an external image as a “stage”
+- Use a previous stage as a new stage
+
+---
+
+#### General concepts
+
+## Multi-stage Builds
+
+Helps in optimizing docker image size while keeping maintainability and readability.
+
+```dockerfile []
+FROM golang:1.17-alpine as build
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+RUN go build -o /my-awesome-app
+
+FROM scratch as runtime
+COPY --from=build /my-awesome-app /usr/bin/my-awesome-app
+
+CMD my-awesome-app
+```
+
 ---
 
 ## Docker CLI
