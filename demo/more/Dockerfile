@@ -1,6 +1,6 @@
 FROM scratch
 
-ENV PERSON_NAME=Jim
+ENV PERSON_NAME="Grocery Discovery"
 
 WORKDIR /bin
 

@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  hello-world-app:
+    build:
+      dockerfile: multi-stage/Dockerfile
+      context: ${PWD}/multi-stage
+    image: demo-multi-stage
+    ports:
+      - 3000:3000
