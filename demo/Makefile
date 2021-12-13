@@ -13,14 +13,14 @@ docker-run-basic:
 	docker run demo-basic
 
 # Demo #2
-docker-build-ports:
-	cd ports && \
+docker-build-more:
+	cd more && \
 	go mod download && \
 	GOOS=linux GOARCH=amd64 go build -o dist/hello-world main.go && \
-	docker build -t demo-ports .
+	docker build -t demo-more .
 
-docker-run-ports:
-	docker run -p=3000:3000 demo-ports
+docker-run-more:
+	docker run -p=3000:3000 demo-more
 
 # Demo #3
 docker-build-multi-stage:
