@@ -1,0 +1,6 @@
+/css/
+/js/
+gulpfile.js
+.gitignore
+package.json
+package-lock.json
