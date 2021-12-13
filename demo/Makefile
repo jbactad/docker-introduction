@@ -2,13 +2,13 @@
 # Demo #1 #
 ###########
 docker-build-basic:
-	cd basic && \
+	cd 01-basic && \
 	GOOS=linux GOARCH=amd64 go build -o dist/hello-world main.go && \
 	docker build -f Dockerfile .
 # or docker build .
 
 docker-build-tag-basic:
-	cd basic && \
+	cd 01-basic && \
 	docker build -t demo-basic .
 
 docker-run-basic:
@@ -18,7 +18,7 @@ docker-run-basic:
 # Demo #2 #
 ###########
 docker-build-more:
-	cd more && \
+	cd 02-more && \
 	go mod download && \
 	GOOS=linux GOARCH=amd64 go build -o dist/hello-world main.go && \
 	docker build -t demo-more .
@@ -31,7 +31,7 @@ docker-run-more:
 ###########
 
 docker-build-multi-stage:
-	cd multi-stage && \
+	cd 03-multi-stage && \
 	docker build -t demo-multi-stage .
 
 docker-run-multi-stage:
