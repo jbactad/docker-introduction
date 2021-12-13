@@ -155,6 +155,28 @@ Note:
   difficult to move around, and cumbersome to maintain and upgrade.
 - Where containers marked a defined shift from the VM era was by isolating execution environments while sharing the underlying OS kernel, providing a lightweight and speedy option for developers.
 
+
+---
+
+## Docker Multi-stage builds
+
+Helps in optimizing docker image size while keeping maintainability and readability.
+
+```dockerfile []
+FROM golang:1.17-alpine as build
+
+COPY go.mod go.sum ./
+RUN go mod download
+
+COPY . .
+RUN go build -o /my-awesome-app
+
+FROM scratch as runtime
+COPY --from=build /my-awesome-app /usr/bin/my-awesome-app
+
+CMD my-awesome-app
+```
+
 ---
 
 ## Docker CLI
