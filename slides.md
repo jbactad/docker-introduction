@@ -217,7 +217,7 @@ docker ps
 
 A command-line tool that uses YAML files to define and run multicontainer Docker applications
 
-```yaml
+```yaml []
 version: '3.8'
 services:
   vendor-list-api:
@@ -238,7 +238,7 @@ services:
 
 ## Docker compose commands
 
-```bash
+```bash []
 # All of these commands operate against the docker-compose.yaml
 # Start all containers
 docker-compose up
@@ -262,8 +262,14 @@ Note:
 
 ---
 
-## Demo Time!
+## Demo Time
 
 ---
 
-## Thank you!
+## Thank you
+
+Slides \
+Source: https://github.com/jbactad/docker-introduction-presentation \
+Url: https://jbactad.github.io/docker-introduction-presentation/ \
+Docker: joshjim27/docker-introduction-presentation
+<!-- .element: class="r-small-text" --->
