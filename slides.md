@@ -106,6 +106,17 @@ Note:
 
 ---
 
+#### Docker registry
+
+## Example
+
+- Docker hub
+- Github packages
+- Amazon Elastic Container Registry
+- Gitlab Container Registry
+
+---
+
 #### General concepts
 
 ## Docker Engine
@@ -117,17 +128,6 @@ Note:
 - Docker Engine is the core of Docker.
 - The Docker Engine includes a long-running daemon process called dockerd for managing containers, APIs that allow
   programs to communicate with the Docker daemon, and a command-line interface.
-
----
-
-#### Docker registry
-
-## Example
-
-- Docker hub
-- Github packages
-- Amazon Elastic Container Registry
-- Gitlab Container Registry
 
 ---
 
