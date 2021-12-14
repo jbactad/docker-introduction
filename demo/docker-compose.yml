@@ -2,8 +2,8 @@ version: "3.8"
 services:
   hello-world-app:
     build:
-      dockerfile: multi-stage/Dockerfile
-      context: ${PWD}/multi-stage
+      dockerfile: ${PWD}/03-multi-stage/Dockerfile
+      context: ${PWD}/03-multi-stage
     image: demo-multi-stage
     ports:
       - 3000:3000
@@ -22,7 +22,7 @@ services:
       WEBPASSWORD: password
     # Volumes store your data between container upgrades
     # Recommended but not required (DHCP needs NET_ADMIN)
-    
+
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
       - NET_ADMIN

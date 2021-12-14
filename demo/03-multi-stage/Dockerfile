@@ -17,7 +17,7 @@ RUN GOOS=linux GOARCH=amd64 go build -o dist/hello-world
 #################
 # Runtime stage #
 #################
-FROM alpine
+FROM alpine as runtime
 
 ENV PERSON_NAME="Grocery Discovery"
 
